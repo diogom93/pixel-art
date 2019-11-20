@@ -1,3 +1,7 @@
+# Pixel art app
+
+This small project was created as an introduction to React. It consists of a small app that contains a 30x30 pixel canvas where the user can create pixel art drawings.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
