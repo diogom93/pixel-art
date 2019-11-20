@@ -1,0 +1,22 @@
+.white {
+    background-color: white;
+}
+
+.lightblue {
+    background-color: lightblue;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.darkblue {
+    background-color: darkblue;
+}
+
+.pixel {
+    width: 30px;
+    height: 30px;
+    border: 1px solid lightgray;
+    box-sizing: border-box;
+  }
