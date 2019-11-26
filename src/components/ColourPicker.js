@@ -5,12 +5,12 @@ import Colours from '../Colours';
 const ColourPicker = props => {
     return (
         <div className="colourPicker">
-           {Colours.map((colour, colourIndex) => {
-               return <Pixel key={colourIndex}
+            {Colours.map((colour, colourIndex) => {
+                return <Pixel key={colourIndex}
                     background={colour}
                     setColour={() => props.selectColour(colourIndex)}
                     currentColour={Colours[props.currentColour] === colour} />
-           })}
+            })}
         </div>
     );
 }

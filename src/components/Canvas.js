@@ -16,16 +16,16 @@ const Canvas = props => {
 
     return (
         <div className={'canvas'}>
-          {matrix.map((row, rowIndex) =>
-            row.map((_, colIndex) => {
-                return (
-                    <Pixel
-                        key={`${rowIndex}-${colIndex}`}
-                        background={Colours[matrix[rowIndex][colIndex]]}
-                        setColour={() => changeColour(rowIndex, colIndex)} />
-                );
-            })
-          )}
+            {matrix.map((row, rowIndex) =>
+                row.map((_, colIndex) => {
+                    return (
+                        <Pixel
+                            key={`${rowIndex}-${colIndex}`}
+                            background={Colours[matrix[rowIndex][colIndex]]}
+                            setColour={() => changeColour(rowIndex, colIndex)} />
+                    );
+                })
+            )}
         </div>
     );
 }
