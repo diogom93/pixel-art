@@ -1,1 +1,1 @@
-export default ['white', 'lightblue', 'blue', 'darkblue'];
+export default ['white', 'red', 'green', 'blue'];
