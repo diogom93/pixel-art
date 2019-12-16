@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import _ from 'lodash';
 import Pixel from './Pixel';
 import Colours from '../Colours';
 
@@ -11,7 +12,7 @@ const Canvas = props => {
     const [matrix, setMatrix] = useState(startingCanvas);
 
     const changeColour = (rowIndex, colIndex) => {
-        const matrixAux = JSON.parse(JSON.stringify(matrix));
+        const matrixAux = _.cloneDeep(matrix);
         matrixAux[rowIndex][colIndex] = props.currentColour;
         setMatrix(matrixAux);
         saveCurrentCanvas(matrixAux);
