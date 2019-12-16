@@ -8,8 +8,8 @@ function App() {
 
     return (
         <div className="App">
-        <ColourPicker currentColour={selectedColour} selectColour={colour => setSelectedColour(colour)} />
-        <Canvas currentColour={selectedColour} />
+            <ColourPicker currentColour={selectedColour} selectColour={colour => setSelectedColour(colour)} />
+            <Canvas currentColour={selectedColour} />
         </div>
     );
 }
